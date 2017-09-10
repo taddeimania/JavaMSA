@@ -22,7 +22,7 @@ public class AirplaneController {
         List<MsbClient.Airplane> airplanes = msbClient.getAirplanes();
         System.out.println("NEW BUILD");
         response.setHeader("Peek", "Aboo");
-        response.setHeader("One more", "Before bed");
+        response.setHeader("Onemore", "Beforeed");
         return airplanes;
     }
 }
