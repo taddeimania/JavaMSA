@@ -20,7 +20,7 @@ public class AirplaneController {
     @RequestMapping("/api/airplanes")
     public List<MsbClient.Airplane> getAirplanesFromMsb(HttpServletResponse response) {
         List<MsbClient.Airplane> airplanes = msbClient.getAirplanes();
-        System.out.println(airplanes);
+        System.out.println("NEW BUILD");
         response.setHeader("Peek", "Aboo");
         return airplanes;
     }
