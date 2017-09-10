@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 /**
@@ -17,9 +18,9 @@ public class AirplaneController {
     MsbClient msbClient;
 
     @RequestMapping("/api/airplanes")
-    public List<MsbClient.Airplane> getAirplanesFromMsb() {
+    public List<MsbClient.Airplane> getAirplanesFromMsb(HttpServletResponse response) {
         List<MsbClient.Airplane> airplanes = msbClient.getAirplanes();
         System.out.println(airplanes);
+        response.setHeader("Peek", "Aboo");
         return airplanes;
     }
-}

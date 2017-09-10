@@ -22,11 +22,6 @@ public class MsbClient {
 
         @JsonProperty("engineCount")
         public int engineCount;
-
-        public Airplane(String manufacturer, int engineCount) {
-            manufacturer = manufacturer;
-            engineCount = engineCount;
-        }
     }
 
     public interface Msb {
