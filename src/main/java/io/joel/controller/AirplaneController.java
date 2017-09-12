@@ -23,7 +23,6 @@ public class AirplaneController {
         System.out.println("NEW BUILD");
         response.setHeader("Peek", "Aboo");
         response.setHeader("Onemore", "Beforeed");
-        response.setHeader("WhichData", System.getenv("WHICHDATA"));
         return airplanes;
     }
 }
