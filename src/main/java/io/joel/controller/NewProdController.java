@@ -11,6 +11,6 @@ public class NewProdController {
 
     @RequestMapping("/api/version")
     public String getVersion() {
-        return "Production Branch!";
+        return "Dev branch!";
     }
 }
